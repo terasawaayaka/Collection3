@@ -16,6 +16,7 @@ extension TopMainViewDelegate {
 // MARK: - Property
 class TopMainView: BaseView {
     weak var delegate: TopMainViewDelegate? = nil
+    @IBOutlet weak var collectionView: UICollectionView!
 }
 // MARK: - Life cycle
 extension TopMainView {
@@ -24,5 +25,8 @@ extension TopMainView {
     }
 }
 // MARK: - Protocol
+extension TopMainView {
+}
+// MARK: - method
 extension TopMainView {
 }

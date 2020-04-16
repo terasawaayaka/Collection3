@@ -11,11 +11,13 @@ import UIKit
 import PGFramework
 // MARK: - Property
 class TopViewController: BaseViewController {
+    @IBOutlet weak var topMainView: TopMainView!
 }
 // MARK: - Life cycle
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,12 @@ extension TopViewController {
     }
 }
 // MARK: - Protocol
-extension TopViewController {
+extension TopViewController:TopMainViewDelegate {
+    
 }
 // MARK: - method
 extension TopViewController {
+    func setDelegate() {
+        topMainView.delegate = self
+    }
 }
