@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMainView" customModule="Collection3" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="TCq-6i-E12" id="VRY-FF-l7j"/>
+                <outlet property="collectionView" destination="TCq-6i-E12" id="yu6-7Q-1IQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

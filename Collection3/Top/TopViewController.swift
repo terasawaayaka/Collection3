@@ -28,7 +28,11 @@ extension TopViewController {
 }
 // MARK: - Protocol
 extension TopViewController:TopMainViewDelegate {
-    
+    func didSelectItemAt() {
+     let nextViewController = NextViewController()
+        navigationController?.pushViewController(nextViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
 }
 // MARK: - method
 extension TopViewController {
