@@ -30,6 +30,7 @@ extension TopMainView {
         collectionViewFlowLayout.estimatedItemSize = CGSize (width: 100, height: 100)
         
         loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "TopMainCollectionViewCell")
+        loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "TopMainCollectionViewSecondCell")
     }
 }
 // MARK: - Protocol
@@ -41,8 +42,18 @@ extension TopMainView:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopMainCollectionViewCell", for: indexPath) as?
             TopMainCollectionViewCell else {return UICollectionViewCell() }
+        guard let secondcell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopMainCollectionViewSecondCell", for: indexPath)as?
+            TopMainCollectionViewSecondCell else {return UICollectionViewCell() }
         
-        return cell
+        switch indexPath.row {
+            case 0:
+            return cell
+            case 1:
+            return secondcell
+        default:
+            return cell
+            
+        }
     }
     
 }
