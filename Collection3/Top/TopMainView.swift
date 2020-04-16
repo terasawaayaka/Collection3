@@ -22,11 +22,27 @@ class TopMainView: BaseView {
 extension TopMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
+        setDelegate()
+        loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "TopMainCollectionViewCell")
     }
 }
 // MARK: - Protocol
-extension TopMainView {
+extension TopMainView:UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopMainCollectionViewCell", for: indexPath) as?
+            TopMainCollectionViewCell else {return UICollectionViewCell() }
+        
+        return cell
+    }
+    
 }
 // MARK: - method
 extension TopMainView {
+    func setDelegate() {
+        collectionView.dataSource = self
+    }
 }
