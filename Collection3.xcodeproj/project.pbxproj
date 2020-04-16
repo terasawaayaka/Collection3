@@ -18,6 +18,8 @@
 		1FEF27F02448227F0090F9F3 /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27EE2448227F0090F9F3 /* TopMainView.xib */; };
 		1FEF27F32448254C0090F9F3 /* TopMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF27F12448254C0090F9F3 /* TopMainCollectionViewCell.swift */; };
 		1FEF27F42448254C0090F9F3 /* TopMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27F22448254C0090F9F3 /* TopMainCollectionViewCell.xib */; };
+		1FEF27F7244828CC0090F9F3 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF27F5244828CC0090F9F3 /* NextViewController.swift */; };
+		1FEF27F8244828CC0090F9F3 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27F6244828CC0090F9F3 /* NextViewController.xib */; };
 		99B2E1FF02F03E20916E11F0 /* Pods_Collection3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE439570F5A84FE950AFF993 /* Pods_Collection3.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		1FEF27EE2448227F0090F9F3 /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainView.xib; sourceTree = "<group>"; };
 		1FEF27F12448254C0090F9F3 /* TopMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		1FEF27F22448254C0090F9F3 /* TopMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		1FEF27F5244828CC0090F9F3 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		1FEF27F6244828CC0090F9F3 /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		A5944665C2A894545874D091 /* Pods-Collection3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection3.release.xcconfig"; path = "Target Support Files/Pods-Collection3/Pods-Collection3.release.xcconfig"; sourceTree = "<group>"; };
 		DE439570F5A84FE950AFF993 /* Pods_Collection3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collection3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5D4BBC61BE7312D3F2ABC9 /* Pods-Collection3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection3.debug.xcconfig"; path = "Target Support Files/Pods-Collection3/Pods-Collection3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		1FEF27D2244817420090F9F3 /* Collection3 */ = {
 			isa = PBXGroup;
 			children = (
+				1FEF27FA244828E20090F9F3 /* Next */,
 				1FEF27E824481C280090F9F3 /* Top */,
 				1FEF27D3244817420090F9F3 /* AppDelegate.swift */,
 				1FEF27D5244817420090F9F3 /* SceneDelegate.swift */,
@@ -95,6 +100,15 @@
 				1FEF27F22448254C0090F9F3 /* TopMainCollectionViewCell.xib */,
 			);
 			path = Top;
+			sourceTree = "<group>";
+		};
+		1FEF27FA244828E20090F9F3 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF27F5244828CC0090F9F3 /* NextViewController.swift */,
+				1FEF27F6244828CC0090F9F3 /* NextViewController.xib */,
+			);
+			path = Next;
 			sourceTree = "<group>";
 		};
 		711BB49A73CB10AEC2740ADD /* Frameworks */ = {
@@ -178,6 +192,7 @@
 				1FEF27EC24481C380090F9F3 /* TopViewController.xib in Resources */,
 				1FEF27E0244817430090F9F3 /* LaunchScreen.storyboard in Resources */,
 				1FEF27F42448254C0090F9F3 /* TopMainCollectionViewCell.xib in Resources */,
+				1FEF27F8244828CC0090F9F3 /* NextViewController.xib in Resources */,
 				1FEF27DD244817430090F9F3 /* Assets.xcassets in Resources */,
 				1FEF27DB244817420090F9F3 /* Main.storyboard in Resources */,
 			);
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FEF27F32448254C0090F9F3 /* TopMainCollectionViewCell.swift in Sources */,
+				1FEF27F7244828CC0090F9F3 /* NextViewController.swift in Sources */,
 				1FEF27EB24481C380090F9F3 /* TopViewController.swift in Sources */,
 				1FEF27D4244817420090F9F3 /* AppDelegate.swift in Sources */,
 				1FEF27D6244817420090F9F3 /* SceneDelegate.swift in Sources */,
