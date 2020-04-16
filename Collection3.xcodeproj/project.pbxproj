@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		1FEF27DB244817420090F9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27D9244817420090F9F3 /* Main.storyboard */; };
 		1FEF27DD244817430090F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27DC244817430090F9F3 /* Assets.xcassets */; };
 		1FEF27E0244817430090F9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27DE244817430090F9F3 /* LaunchScreen.storyboard */; };
+		1FEF27EB24481C380090F9F3 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF27E924481C380090F9F3 /* TopViewController.swift */; };
+		1FEF27EC24481C380090F9F3 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF27EA24481C380090F9F3 /* TopViewController.xib */; };
 		99B2E1FF02F03E20916E11F0 /* Pods_Collection3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE439570F5A84FE950AFF993 /* Pods_Collection3.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		1FEF27DC244817430090F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FEF27DF244817430090F9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FEF27E1244817430090F9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEF27E924481C380090F9F3 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		1FEF27EA24481C380090F9F3 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
 		A5944665C2A894545874D091 /* Pods-Collection3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection3.release.xcconfig"; path = "Target Support Files/Pods-Collection3/Pods-Collection3.release.xcconfig"; sourceTree = "<group>"; };
 		DE439570F5A84FE950AFF993 /* Pods_Collection3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collection3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5D4BBC61BE7312D3F2ABC9 /* Pods-Collection3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection3.debug.xcconfig"; path = "Target Support Files/Pods-Collection3/Pods-Collection3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		1FEF27D2244817420090F9F3 /* Collection3 */ = {
 			isa = PBXGroup;
 			children = (
+				1FEF27E824481C280090F9F3 /* Top */,
 				1FEF27D3244817420090F9F3 /* AppDelegate.swift */,
 				1FEF27D5244817420090F9F3 /* SceneDelegate.swift */,
 				1FEF27D9244817420090F9F3 /* Main.storyboard */,
@@ -69,6 +74,15 @@
 				1FEF27E1244817430090F9F3 /* Info.plist */,
 			);
 			path = Collection3;
+			sourceTree = "<group>";
+		};
+		1FEF27E824481C280090F9F3 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF27E924481C380090F9F3 /* TopViewController.swift */,
+				1FEF27EA24481C380090F9F3 /* TopViewController.xib */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 		711BB49A73CB10AEC2740ADD /* Frameworks */ = {
@@ -85,7 +99,6 @@
 				EC5D4BBC61BE7312D3F2ABC9 /* Pods-Collection3.debug.xcconfig */,
 				A5944665C2A894545874D091 /* Pods-Collection3.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEF27EC24481C380090F9F3 /* TopViewController.xib in Resources */,
 				1FEF27E0244817430090F9F3 /* LaunchScreen.storyboard in Resources */,
 				1FEF27DD244817430090F9F3 /* Assets.xcassets in Resources */,
 				1FEF27DB244817420090F9F3 /* Main.storyboard in Resources */,
@@ -204,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEF27EB24481C380090F9F3 /* TopViewController.swift in Sources */,
 				1FEF27D4244817420090F9F3 /* AppDelegate.swift in Sources */,
 				1FEF27D6244817420090F9F3 /* SceneDelegate.swift in Sources */,
 			);
