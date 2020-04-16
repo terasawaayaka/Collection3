@@ -18,12 +18,17 @@ extension TopMainViewDelegate {
 class TopMainView: BaseView {
     weak var delegate: TopMainViewDelegate? = nil
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
 }
 // MARK: - Life cycle
 extension TopMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setDelegate()
+        
+        collectionViewFlowLayout.estimatedItemSize = CGSize (width: 100, height: 100)
+        
         loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "TopMainCollectionViewCell")
     }
 }
