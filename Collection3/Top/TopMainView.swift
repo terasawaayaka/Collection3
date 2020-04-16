@@ -10,7 +10,7 @@ import UIKit
 
 import PGFramework
 protocol TopMainViewDelegate: NSObjectProtocol{
-    func didSelectItemAt()
+    func didSelectItemAt(indexPath:IndexPath)
 }
 extension TopMainViewDelegate {
 }
@@ -61,7 +61,7 @@ extension TopMainView:UICollectionViewDataSource {
 extension TopMainView:UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let delegate = delegate {
-            delegate.didSelectItemAt()
+            delegate.didSelectItemAt(indexPath: indexPath)
         }
     }
     

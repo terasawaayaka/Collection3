@@ -28,10 +28,19 @@ extension TopViewController {
 }
 // MARK: - Protocol
 extension TopViewController:TopMainViewDelegate {
-    func didSelectItemAt() {
-     let nextViewController = NextViewController()
-        navigationController?.pushViewController(nextViewController, animated: true)
-        animatorManager.navigationType = .slide_push
+    func didSelectItemAt(indexPath:IndexPath) {
+        switch indexPath {
+        case [0,0]:
+            let nextViewController = NextViewController()
+            navigationController?.pushViewController(nextViewController, animated: true)
+            animatorManager.navigationType = .slide_push
+        case [0,1]:
+            let thirdViewController = ThirdViewController()
+            navigationController?.pushViewController(thirdViewController, animated: true)
+            animatorManager.navigationType = .slide_push
+        default:
+            break
+        }
     }
 }
 // MARK: - method
